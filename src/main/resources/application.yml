@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: gerenciador-pagamento
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pagamento?createDatabaseIfNotExist=true
+    username: root
+    password: vini
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
