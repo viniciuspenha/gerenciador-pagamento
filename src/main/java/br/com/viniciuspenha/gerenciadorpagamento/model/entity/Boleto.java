@@ -24,8 +24,8 @@ import java.util.UUID;
 public class Boleto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID codigo;
+
     private Long automovelId;
     private Integer marcaId;
     private Integer modeloId;

@@ -1,5 +1,5 @@
 CREATE TABLE boleto (
-  codigo binary(16) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  codigo binary(16) PRIMARY KEY NOT NULL,
   automovel_id BIGINT NOT NULL,
   marca_id INT NOT NULL,
   modelo_id INT NOT NULL,
