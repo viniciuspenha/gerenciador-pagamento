@@ -35,7 +35,7 @@ public class BoletoService {
 
         try {
             ResponseAutomovelDTO automovel = automovelClient.getAutomovelById(requestBoletoDTO.getAutomovelId());
-            log.info("BoletoService.geraBoleto - automovel encontradp {}", automovel);
+            log.info("BoletoService.geraBoleto - automovel encontrado {}", automovel);
             Boleto boleto = boletoMapper.toBoleto(requestBoletoDTO, automovel);
             return boletoRepository.save(boleto);
         } catch (Exception e) {

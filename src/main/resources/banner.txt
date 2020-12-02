@@ -12,4 +12,4 @@
 |  '--'  ||  |____    |  |       /  _____  \  |  |__| |  /  _____  \  |  |  |  | |  |____ |  |\   |     |  |     |  `--'  |
 |_______/ |_______|   | _|      /__/     \__\  \______| /__/     \__\ |__|  |__| |_______||__| \__|     |__|      \______/
 
- :: Gerenciador de Automoveis ::                (Vinicius Penha)
+ :: Gerenciador de Pagamentos de Automoveis ::                (Vinicius Penha)
