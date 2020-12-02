@@ -8,4 +8,4 @@ CREATE TABLE boleto (
   status varchar(7) NOT NULL DEFAULT 'CRIADO' COMMENT 'CRIADO, PAGO, VENCIDO',
   data_cadastro datetime NOT NULL,
   data_atualizacao datetime NOT NULL
-););
+);
