@@ -9,13 +9,14 @@
         <relativePath/>
     </parent>
     <groupId>br.com.viniciuspenha</groupId>
-    <artifactId>auto-payment-manager</artifactId>
+    <artifactId>gerenciador-pagamento</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>auto-payment-manager</name>
-    <description>Auto Payment Manager</description>
+    <name>gerenciador-pagamento</name>
+    <description>Gerenciador Pagamento</description>
 
     <properties>
         <java.version>11</java.version>
+        <spring-cloud.version>2020.0.0-M5</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -36,7 +37,10 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.21</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -57,5 +61,25 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
 
 </project>
