@@ -17,7 +17,6 @@ public class RequestBoletoDTO {
     @NotNull(message = "automovelId nao pode ser nulo")
     private Long automovelId;
 
-    @NotNull(message = "Valor nao pode ser nulo")
     @Digits(integer = 10, fraction = 2, message = "Valor inválido. Seguir o padrão <10 dígitos>.<2 dígitos>")
     private BigDecimal valor;
 

@@ -1,6 +1,6 @@
 package br.com.viniciuspenha.gerenciadorpagamento.model.entity;
 
-public enum StatusBoleto {
+public enum BoletoStatus {
 
     CRIADO, PAGO, VENCIDO
 }

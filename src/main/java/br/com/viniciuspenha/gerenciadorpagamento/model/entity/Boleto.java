@@ -27,13 +27,11 @@ public class Boleto {
     private UUID codigo;
 
     private Long automovelId;
-    private Integer marcaId;
-    private Integer modeloId;
     private BigDecimal valor;
     private LocalDate vencimento;
 
     @Enumerated(EnumType.STRING)
-    private StatusBoleto status;
+    private BoletoStatus status;
 
     @Column(nullable = false, updatable = false)
     @CreatedDate
